@@ -15,15 +15,14 @@ description: A starting point for further customization of uBlue images. Make yo
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
   - python3-pip # needed for yafti (the first boot installer)
+  - langpacks-en
+  - langpacks-en_GB
+  - alacritty
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
   - org.mozilla.firefox
-  - org.mozilla.Thunderbird
   - com.mattjakeman.ExtensionManager
   - org.libreoffice.LibreOffice
-  - org.gnome.DejaDup
-  - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
-  - io.github.celluloid_player.Celluloid
