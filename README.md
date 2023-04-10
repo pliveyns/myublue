@@ -1,4 +1,4 @@
-# Starting point
+# myublue
 
 [![build-ublue](https://github.com/pliveyns/myublue/actions/workflows/build.yml/badge.svg)](https://github.com/pliveyns/myublue/actions/workflows/build.yml)
 
