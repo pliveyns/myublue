@@ -31,7 +31,8 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - recipe.yml
+          - recipe-std.yml
+          - recipe-kvm.yml
 
     steps:
       # Checkout push-to-registry action GitHub repository

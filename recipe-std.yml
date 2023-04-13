@@ -1,5 +1,5 @@
 # The image will be at ghcr.io/yourusername/name
-name: myublue
+name: myublue-std
 
 # The native container image to build on top of
 # images. 
@@ -13,15 +13,16 @@ base-container: ghcr.io/ublue-os/silverblue-main
 fedora-version: 37
 
 # This description will be visible in the container metadata
-description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
+description: My Silverblue image based on uBlue. Make your own! https://ublue.it/making-your-own/
 
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
-  - python3-pip # needed for yafti (the first boot installer)
+  - python3-pip       # needed for yafti (the first boot installer)
+  - python3-psutil    # needed for dconf
   - langpacks-en
-  - langpacks-en_GB
-  - alacritty
+  - langpacks-en_GB   # prefered language
+  - alacritty         # terminal emulator
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
