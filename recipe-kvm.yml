@@ -13,22 +13,22 @@ base-container: ghcr.io/ublue-os/silverblue-main
 fedora-version: 37
 
 # This description will be visible in the container metadata
-description: My Silverblue image based on uBlue. Make your own! https://ublue.it/making-your-own/
+description: My Silverblue image based on uBlue. Checkout ublue.it to :wmake your own! https://ublue.it/making-your-own/
 
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
   - python3-pip       # needed for yafti (the first boot installer)
-  - python3-psutil    # needed for dconf
-  - langpacks-en
-  - langpacks-en_GB   # prefered language
+  - python3-psutil    # needed for dconf (???)
+  - langpacks-en      # default langpacks for englisch
+  - langpacks-en_GB   # prefered language packs
   - alacritty         # terminal emulator
-  - bridge-utils
+  - bridge-utils      # network bridge for virtualisation
   - vagrant-libvirt   # vagrant install
   - virt-install      # KVM virtualisation
-  - virt-manager
-  - edk2-ovmf
-  - swtpm              # Software TPM for KVM
+  - virt-manager      # grahical gui for kvm virtualisation
+  - edk2-ovmf         # uefi for kvm guests
+  - swtpm             # Software TPM for KVM
 
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.

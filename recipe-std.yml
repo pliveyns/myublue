@@ -13,14 +13,14 @@ base-container: ghcr.io/ublue-os/silverblue-main
 fedora-version: 37
 
 # This description will be visible in the container metadata
-description: My Silverblue image based on uBlue. Make your own! https://ublue.it/making-your-own/
+description: My Silverblue image based on uBlue. Checkout ublue.it to make your own! https://ublue.it/making-your-own/
 
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
   - python3-pip       # needed for yafti (the first boot installer)
   - python3-psutil    # needed for dconf
-  - langpacks-en
+  - langpacks-en      # English langpacks
   - langpacks-en_GB   # prefered language
   - alacritty         # terminal emulator
 

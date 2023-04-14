@@ -2,7 +2,7 @@
 
 [![build-ublue](https://github.com/pliveyns/myublue/actions/workflows/build.yml/badge.svg)](https://github.com/pliveyns/myublue/actions/workflows/build.yml)
 
-This is a starting point Fedora Silverblue image designed to be customized to whatever you want, have GitHub build it for you, and then host it for you. You then just tell your computer to boot off of that image. GitHub keeps 90 days worth image backups for you, thanks Microsoft!
+This is my Silverlue image based on ublue-os.
 
 For more info, check out the [uBlue homepage](https://ublue.it/) and the [main uBlue repo](https://github.com/ublue-os/main/)
 
@@ -62,13 +62,13 @@ The files `/etc/profile.d/ublue-firstboot.sh` and `/etc/skel.d/.config/autostart
 To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/pliveyns/myublue:latest
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/pliveyns/myublue{std|kvm}:latest
 ```
 
 This repository builds date tags as well, so if you want to rebase to a particular day's build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/pliveyns/myublue:20230403
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/pliveyns/myublue{std|kvm}:20230403
 ```
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `release.yml`, so you won't get accidentally updated to the next major version.
@@ -97,6 +97,6 @@ Check the [just website](https://just.systems) for tips on modifying and adding 
 
 These images are signed with sisgstore's [cosign](https://docs.sigstore.dev/cosign/overview/). You can verify the signature by downloading the `cosign.pub` key from this repo and running the following command:
 
-    cosign verify --key cosign.pub ghcr.io/pliveyns/myublue
+    cosign verify --key cosign.pub ghcr.io/pliveyns/myublue{std|kvm}
 
 If you're forking this repo, the uBlue website has [instructions](https://ublue.it/making-your-own/) for setting up signing properly.
