@@ -34,8 +34,19 @@ rpms:
 # this is just an example selection.
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
-  - org.mozilla.firefox
-  - com.mattjakeman.ExtensionManager
-  - org.libreoffice.LibreOffice
-  - com.github.tchx84.Flatseal
+  - org.mozilla.firefox                  # internet browser
+  - com.mattjakeman.ExtensionManager     # gnome extension manager
+  - org.libreoffice.LibreOffice          # office
+  - com.github.tchx84.Flatseal           # flatpak tool
+  - com.bitwarden.desktop                # password tool
+  - com.github.johnfactotum.Foliate      # ebook reader
+  - io.mpv.Mpv                           # movie player
+  - org.filezillaproject.Filezilla       # ftp; scp; sftp client
+  - nz.mega.MEGAsync                     # mega client
+  - io.gitlab.librewolf-community        # privacy browser
+  - org.gnome.Cheese                     # cam tool
+  - com.github.marktext.marktext         # markdown tool
+  - org.gnome.FileRoller                 # (un)archive app
+  - social.whalebird.WhalebirdDesktop    # mastodon client
+  - im.riot.Riot                         # element app; matrix messaging
 
