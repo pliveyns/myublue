@@ -2,7 +2,7 @@
 # Additions to the Silverblue image
 
 # Make sure the fonts directory exists
-mkdir -p /usr/local/share/fonts
+mkdir -p /var/usrlocal/share/fonts
 
 # Download the MelsoLGS fonts for system wide us
 wget -O "/usr/local/share/fonts/MesloLGS NF Regular.ttf" https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
