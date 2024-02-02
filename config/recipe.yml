@@ -32,6 +32,11 @@ modules:
 
   - from-file: custom-packages.yml
 
+  - type: bling
+    install:
+      - dconf-update-service
+      - laptop
+
   - type: default-flatpaks
     notify: true   # Send notification after install/uninstall is finished (true/false)
     system:
