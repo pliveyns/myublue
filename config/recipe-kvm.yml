@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: myublue
+name: myublue-kvm
 # description will be included in the image's metadata
 description: myublue; my customized Fedora Silverblue. Check out https://ublue.it/making-your-own/ to make your own!
 
