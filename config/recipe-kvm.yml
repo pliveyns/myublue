@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: myublue-kvm
+name: myublue
 # description will be included in the image's metadata
 description: myublue; my customized Fedora Silverblue. Check out https://ublue.it/making-your-own/ to make your own!
 
@@ -32,6 +32,11 @@ modules:
 
   - from-file: custom-packages.yml
   - from-file: custom-packages-kvm.yml
+
+  - type: bling
+    install:
+      - dconf-update-service
+      - laptop
 
   - type: default-flatpaks
     notify: true   # Send notification after install/uninstall is finished (true/false)
