@@ -1,5 +1,7 @@
 # myublue
 
+[![build-ublue](https://github.com/pliveyns/myublue/actions/workflows/build.yml/badge.svg)](https://github.com/pliveyns/myublue/actions/workflows/build.yml)
+
 Customized Fedora Silverblue image based on the Universal Blue Project.
 
 For more info, check out the [uBlue homepage](https://universal-blue.org/) and the [main uBlue repo](https://github.com/ublue-os/main/)
